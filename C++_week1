@@ -1,0 +1,32 @@
+/*#include<iostream>
+using namespace std;
+
+void main()//starting point
+//for compilation
+{
+	cout << "Hello World   ";
+	cout << endl << endl;
+	system("pause");
+}*?
+
+/*#include<iostream>
+using namespace std;
+
+void main()//starting point
+//for compilation
+{
+	cout << 1 + (4 - 3 % 88) * 2 << endl;
+	system("pause");
+}*/
+
+#include<iostream>
+using namespace std;
+
+void main()//starting point
+//for compilation
+{
+	cout<<"Enter number" << endl;
+	int x; //declaration
+	cin>> x;   //console in take in the computer
+	cout<<"you entered  " << x << endl;
+}
