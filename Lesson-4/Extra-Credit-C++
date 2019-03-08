@@ -1,0 +1,56 @@
+/*#include<iostream>
+
+using namespace std;
+
+void main()
+{
+	int testscore;
+
+	cout << "Test score" << endl;
+
+	cin >> testscore;
+
+	if (testscore > 50 && testscore < 100)
+	{
+		cout << "pass" << endl;
+	}
+	if (testscore < 50 && testscore > 0)
+	{
+		cout << "fail" << endl;
+	}
+	if (testscore > 100 || testscore < 0)
+	{
+		cout << "wrong" << endl;
+	}
+	system("pause");
+}
+
+//enter a year, computer will determine if it will be a leap year
+//divisible by 100 = not leap year
+//divisible by 100 & 4 = not leap year
+//divisible 400 = leap year
+//divisible by 4 and nothing else = leap year*/
+
+#include <iostream>
+
+using namespace std;
+
+void main()
+{
+	int year;
+	cout << "Enter a year" << endl;
+	cin >> year;
+
+	
+	if (year % 400 = 0 || year % 4 = 0)
+	{
+		cout << "not leap year" << endl;
+
+	}
+
+	if (year % 100 = 0 && year % 4 = 0)
+	{
+		cout << "leap year" << endl;
+	}
+	system("pause");
+}
