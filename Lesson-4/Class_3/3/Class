@@ -1,0 +1,24 @@
+#include<iostream>
+#include<time.h>
+
+using namespace std;
+void main()
+{
+    cout << "1. F to C" << endl;
+    cout <<"2. C to F" <<endl;
+    cout<<"3. Exit"<<endl;
+    int choice;
+    cin>>choice;
+    //if(choice==1)
+    switch (choice)
+    {
+        case 1: case 10: 
+        cout<<"F to C"<<endl;
+        case 2: 
+        cout<<"C to F"<<endl;
+        case 3:
+        cout<<"Exit"<<endl;
+        
+    }
+
+}
