@@ -1,0 +1,60 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class student
+{
+public:
+	//constructor has to be public (initialize variables of the class)
+	student(string s)
+	{
+		name = s;
+	}
+	void setname(string n)
+	{
+		name = n;
+	}
+	string getname()
+	{
+		return name;
+	}
+	student()
+	{
+		name = "";
+		n_of_classes = 0;
+	}
+	void input();
+	void output();
+	void add_class();
+
+private:
+	string name;
+	int n_of_classes = 7;
+
+};
+void student::add_class() //object of student
+{
+	n_of_classes++;
+}
+void student::input() //object of student
+{
+	cin >> name >> n_of_classes;
+}
+void student::output() //object of student
+{
+	cout << name << n_of_classes << endl;
+}
+
+void main()
+{
+	student x; //default constructor
+	x.input();
+	x.add_class();
+	x.output();
+
+	system("pause");
+}
+
+//use class variables don't make extra variables
+//make variables private (will deduct points)
