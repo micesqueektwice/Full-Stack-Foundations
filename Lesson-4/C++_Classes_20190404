@@ -1,60 +1,52 @@
 #include <iostream>
-#include <string>
 
 using namespace std;
 
-class student
-{
+class Rectangle
+
 public:
-	//constructor has to be public (initialize variables of the class)
-	student(string s)
-	{
-		name = s;
-	}
-	void setname(string n)
-	{
-		name = n;
-	}
-	string getname()
-	{
-		return name;
-	}
-	student()
-	{
-		name = "";
-		n_of_classes = 0;
-	}
-	void input();
-	void output();
-	void add_class();
 
-private:
-	string name;
-	int n_of_classes = 7;
+double width;
+double height;
 
-};
-void student::add_class() //object of student
+Rectangle()
 {
-	n_of_classes++;
+    width = 1.0;
+    height = 1.0;
 }
-void student::input() //object of student
+
+Rectangle(double measurewidth, double measureheight)
 {
-	cin >> name >> n_of_classes;
+    //accepts two parameters that creates a rectangle with w X h = to value of parameters
 }
-void student::output() //object of student
+
+void getArea() //returns area of rectangle
 {
-	cout << name << n_of_classes << endl;
+    getArea = width * height;
+}
+
+void getPerimeter() //returns perimeter of rectangle
+{
+    getPerimeter = 2(width + height);
+}
+
+void Rectangle::input() //object of Rectangle
+{
+    cin << "Height of rectangle" << width;
+    cin << "Width of rectangle" << length;
+}
+
+void Rectangle::output() // object of Rectangle
+{
+    cout << "Area of rectangle is" << getArea 
+    cout << "Perimeter of rectangle is" << getPerimeter << endl;
 }
 
 void main()
 {
-	student x; //default constructor
-	x.input();
-	x.add_class();
-	x.output();
-
-	system("pause");
+    Rectangle x;
+    x.input();
+    x.getArea();
+    x.getPerimeter();
+    x.output();
 }
-
-//use class variables don't make extra variables
-//make variables private (will deduct points)
