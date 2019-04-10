@@ -1,0 +1,102 @@
+#include<iostream>
+#include<string>
+
+using namespace std;
+/*struct x
+{
+	int y;
+	int s;
+	void input()
+	{
+	}
+};
+
+struct student
+{
+	void input();
+	void output();
+	x var;
+	string name;
+	int ssn;
+	float gpa;
+};
+void main()
+{
+	student s;
+	s.var.input();
+}*/
+class student//class declaration
+{//member functions
+public:
+	//accessor - get and mutator set
+	string get_name()
+	{
+		return name;
+	}
+	void set_name(string n)
+	{
+		name = n;
+	}
+	student();//default constructor
+	student(string, int s, float g)
+	{
+		name = n;
+		ssn = s;
+		gpa = g;
+		total++;
+	}
+	void input();
+	void output() const;
+	int get_total()
+	student(string n)
+	{
+		name = n;
+		total++;
+	}
+private:
+	static int total;
+	string name;
+	int ssn;
+	float gpa;
+
+};
+int student::get_total = 0; //how to initialize total
+student::student()
+{
+	ssn = 0;
+	gpa = 0;
+	name = "";
+}
+//class definition
+void student::input()
+{
+	cout << "Enter name,ssn and gpa" << endl;
+	cin >> name >> ssn >> gpa;
+}
+void student::output()
+{
+	cout << name << " " << ssn << " " << gpa << endl;
+}
+void function(student s)
+{
+	s.input();
+}
+void main()
+{
+	student s[3];//default constructor is called
+	for (int i = 0; i < 3; i++)
+	{
+		s[i].output();
+	}
+	cout << "total" << s[i].get_total() << endl;
+	student x("Anna",1,1);
+	student y = student("mary", 2, 3);
+	x.output();
+	x.set_name("Mary");
+	cout << x.get_name();
+	cout << x.name;
+	//s.input();
+	//s.output();
+
+}
+
