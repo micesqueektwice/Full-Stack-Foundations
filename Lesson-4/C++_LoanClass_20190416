@@ -1,0 +1,71 @@
+#include <iostream>
+
+using namespace std;
+
+class Loan
+{
+
+public:
+
+	double annualInterestRate = 2.5;
+	int numberofYears = 1;
+	double loanAmount = 1000;
+
+
+};
+
+void main();
+{
+
+	Loan()
+	{
+
+	};
+
+	Loan(double annualInterestRate, double numberOfYears, double loanAmount)
+	{
+		
+	};
+
+	double getannualInterestRate()
+	{
+		//returns annual interest of this loan
+	};
+
+	int getNumberofYears()
+	{
+		//returns number of years for this loan
+	}
+
+	double getloanAmount()
+	{
+
+	};
+
+	set void annualInterestRate()
+	{
+		double annualInterestRate
+	};
+
+	set void numberofYears()
+	{
+		int numberofYears
+	};
+
+	set void loanAmount()
+	{
+		double loanAmount
+	};
+
+	get double MonthlyPayment()
+	{
+		return //monthly payment
+	};
+
+	get double TotalPayment()
+	{
+		return //total monthly payment
+	};
+
+	system("pause");
+}
