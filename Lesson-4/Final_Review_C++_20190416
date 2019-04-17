@@ -1,0 +1,36 @@
+//final review
+//39 questions multiple choice
+
+//test on syntax
+//extensions for c++ files
+//why computer uses 0 and 1
+//cpu what is it
+//how many times will a program execute (diff between increment, decrement etc.)
+//accumulator
+//break & continue statement
+//switch statement
+//if statement
+//lt/gt (less than, greater than)
+//void function (doesn't return anything). 
+//function name, parameter list (elements of a function)
+//toupper/tolower case functions
+//determine output when function is called with specific values
+//question about power and math (Library math)
+//call by reference/call by value
+//function overloading
+//Chp. 7 - declaration of array of characters with empty bracket and with number x[] = 9 size of array vs. x[8] = 8 size of array
+//how to pass array to function f(int x[][2])
+//how to assign values to dimensional array int x[2]row[3]column = {{1,2,3},{0,4,5}}
+//instance variable, static variable
+//class & constructor with parameters, you have to have a constructor
+//how to delcare a type class
+//if you have two header files accidentally, it won't run unless you have ...
+//Data fields in a class
+//Chp. 9 3 functions append.string, append.insert, assign - know what they do
+//Know how to read a class
+//Accessor and mutator functions (GET and SET) functions (what they do) 
+//Destructor - destroys certain variables, Constructor initializes variables
+//Public & private.  By default everything is private. Struct is public
+//Member functions (private, public) can access everything int he class
+
+	
