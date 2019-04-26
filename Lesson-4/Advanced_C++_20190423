@@ -1,0 +1,66 @@
+//Register.cpp
+//Step 1 - Add Class student.cpp
+
+#include<vector
+#include<iostream>
+
+using namepsace std;
+
+void()
+{
+
+  vector <int>x; //this is how you declare vector (Same as an array)
+  x.push_back(3); //3 is pushed back into the vector (this is first element of vector)
+  x.push_back(1);
+  
+  for(int i=0; i<x.size(); i++()) //more convenient of array, we don't have to worry about the size of the array
+  {
+  cout << x[i] << endl;
+  }
+  
+  x.pop_back();
+  
+  for(int i = 0; i < x.size (); i++)
+  {
+  cout<<x[i]<<endl;
+  }
+  
+}
+
+
+//class student.h
+#pragma once //if you type something more than once it will take care of it
+#include <vector>
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class student
+{
+public:
+  student(); //default constructor initializes values of variable
+  student(string n, int i); //constructor with parameters
+  ~student(); //deconstructor
+  void add_course(int c); 
+  void drop_course(int c);
+  void print();  //may be underlined because there is no code for these
+  
+private:
+  string name;
+  int id;
+  vector<int>c_id;
+};
+
+//student.h
+
+#include "student.h"
+
+student::student()
+{
+}
+
+student::~student()
+{
+}
+
