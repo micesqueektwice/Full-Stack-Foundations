@@ -1,30 +1,39 @@
 //Register.cpp
 //Step 1 - Add Class student.cpp
 
-#include<vector
-#include<iostream>
+#include "student.h"
 
-using namepsace std;
-
-void()
+void main()
 {
+	vector<student> s;
+	vector<course> c;
+	student x("Anna", 1);
+	course y("Math", 2);
 
-  vector <int>x; //this is how you declare vector (Same as an array)
-  x.push_back(3); //3 is pushed back into the vector (this is first element of vector)
-  x.push_back(1);
-  
-  for(int i=0; i<x.size(); i++()) //more convenient of array, we don't have to worry about the size of the array
-  {
-  cout << x[i] << endl;
-  }
-  
-  x.pop_back();
-  
-  for(int i = 0; i < x.size (); i++)
-  {
-  cout<<x[i]<<endl;
-  }
-  
+	//menu
+
+	cout << "1. Add class" << endl;
+	cout << "2. drop class" << endl;
+	cout << "3. print student" << endl;
+	cout << "4. print course" << endl;
+	cout << "5. Exit" << endl;
+
+	//input choice
+	switch (choice)
+	{
+	case 1:
+		cout << "Enter student id;" << endl;
+		//find this student
+		cout << "Enter class id" << endl;
+		//find course
+		//add_course
+
+		//add student
+	}
+
+	/*case 1:
+	cout << "Enter student id;" << endl;
+
 }
 
 
@@ -39,28 +48,75 @@ using namespace std;
 class student
 {
 public:
-  student(); //default constructor initializes values of variable
-  student(string n, int i); //constructor with parameters
-  ~student(); //deconstructor
-  void add_course(int c); 
-  void drop_course(int c);
-  void print();  //may be underlined because there is no code for these
-  
+	student(); //default constructor initializes values of variable
+	student(string n, int i); //constructor with parameters
+	~student(); //deconstructor
+	void add_course(int c);
+	void drop_course(int c);
+	void print();  //may be underlined because there is no code for these
+	int get_id()
+	{
+		return studentID;
+	}
+
 private:
-  string name;
-  int id;
-  vector<int>c_id;
+	string name;
+	int id;
+	vector<int>c_id;
 };
 
-//student.h
+//student.cpp
 
 #include "student.h"
 
+
+
 student::student()
 {
+	studentName = "";
+	studentID = 0;
+}
+student::student
+
+
+student::~student(string n, int i)
+{
+	studentName = n;
+	studentID = i;
 }
 
-student::~student()
+void student::add_course(int c)
 {
+	courses.push_back(c);
 }
+
+void student::deleteCourse(int c)
+{
+	if (course.size > 0)
+	{
+		for (int i = 0; i < courses.size; i++)
+		{
+			if (courses.at(i) == c)
+			{
+				courses.erase(courses.begin() + i);
+				return;
+			}
+		}
+	}
+	else
+	{
+		cout << "you are not registered.";
+		return;
+	}
+}
+
+void student::printCourses()
+{
+	cout << studentName << " is registered for " << endl;
+	for (int i = 0; i < courses.size(); i++)
+	{
+		cout << courses[i] << "";
+	}
+}
+
 
