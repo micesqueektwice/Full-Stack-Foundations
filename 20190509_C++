@@ -1,0 +1,52 @@
+include <iostream>
+include < >
+
+void main()
+{
+class person
+{
+protected:
+  string name;
+  int age;
+public:
+  person()
+  {
+  name = "";
+  age = 0;
+  }
+  person(string name, int age)
+  {
+  this->name;
+  this->age = age;
+  }
+  void print()
+  {
+  cout << name << "" << age << endl;
+
+  }
+};
+
+class student: public person
+{
+ private:
+  string name;
+ protected:
+  string school;
+ public:
+  student():
+  student(string name, int age, string school);
+  //void print():
+};
+
+//how to write constructor for student
+student::student():person(),school("") //how you call constructor of the base class
+{
+//school=="";
+}
+student::student(string name, int age, string school):
+  person(name, age)
+  {
+  this->school = school;
+  }
+
+  
