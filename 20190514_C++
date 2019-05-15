@@ -1,0 +1,118 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class person
+{
+protected:
+	string name;
+	int ssn;
+	string address;
+public:
+
+	//destructor
+	~person()
+	{
+		cout << "Destructor called" << endl;
+
+	}
+	person(string, int, string);
+	person(string);
+	person()
+	{
+		name = "";
+
+		ssn = 0;
+		address = "";
+	}
+	void virtual input();
+	void virtual output();
+};
+person::person(string n, int s, string a)
+{
+	name = n;
+
+	ssn = s;
+	address = a;
+}
+person::person(string n)
+{
+	name = n;
+}
+void person::input()
+{
+	cout << "Enter name and ssn" << endl;
+	cin >> this->name >> ssn;
+}
+void person::output()
+{
+	cout << name << " " << ssn << endl;
+}
+class student :public person
+{
+
+protected:
+	string school;
+	int const s_id;
+
+public:
+	void output()
+	{
+		person::output();
+		cout << school << endl;
+	}
+
+	student();
+	student(string, int, string, string, int);
+};
+student::student() :person(), s_id(44)
+{
+	school = "";
+}
+student::student(string n, int s, string a, string sc, int i) :
+	person(n, s, a), school(sc), s_id(44)
+{
+	//school = sc;
+}
+
+class student_worker :public student, public worker
+{
+	student_worker()
+	{
+		name = "";
+		ssn = 1;
+		}
+};
+
+void main()
+{
+	/*person *p = new person("Anna", 1, "main street");
+	p->output();
+	p = new person("second", 22, "main");
+	person *l = new person();
+	p->output();
+	delete p;*/
+
+	person *x[2];
+	x[0] = new student("Student", 1, "Main street", "Mtsac", 44);
+	x[1] = new person("Person", 2, "Elmer street");
+
+	cout << "enter id" << endl;
+	cin >> id;
+
+	for (int i = 0; i < 2; i++)
+	{
+		if(id==x[i]->get_id())
+		x[i]->output();
+		
+	}
+
+	for (int i = 0; i < 2; i++)
+	{
+		delete x[i];
+
+	}
+
+	//s.output();
+
+}
+
