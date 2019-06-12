@@ -1,0 +1,40 @@
+Inheretance is example of what type of relationship = Is base class
+What type of relationship is composition = Has as
+which is base which is derived
+class is how to create derived class from base class
+public & private class
+How to define Base class function inside derived class?
+Polymorphism
+How protected, private and public inheritence work 
+base class public, derived class will be function with 
+protected inheritence
+how to create and delcare pointers
+how to put address = ampersand 
+if given certain code, determine the output
+  int x = 5;
+  int p = 2x;
+  cout << * p;
+  what is output? 5
+dynamic binding and what it's sometimes called
+hidden pointer to itself = this
+how to generate exceptions put the whole thing in 
+all exceptions derived from exception class
+recursion
+  base case is when you exit the function
+  which is general and which is base case
+  general case calls the function
+  be able to determine what will be the output of the function
+link list
+  all elements of linked list are called nodes
+ every node except the last one has an address of the next node
+ simply, double, circular linked list names
+ each node contains address of next node
+ last node contains address of 0
+ 
+ Look at the homework with salesperson to understand the code, if you are given loop.  Going through each element of list is called traversal
+ Basic operation of linked list is making a copy of the linked list
+ removed from front added to back
+ if given code with several variables of types, step 
+ 
+ 33 questions multiple choice
+ 
